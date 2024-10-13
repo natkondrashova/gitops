@@ -3,6 +3,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: simple-deployment
+  labels:
+    app: my-test
 spec:
   replicas: 1
   selector:
